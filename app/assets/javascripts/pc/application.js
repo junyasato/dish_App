@@ -13,7 +13,4 @@
 //= require jquery
 //= require jquery_ujs
 //= require turbolinks
-//= require pc/js/jquery.min.js
-//= require pc/js/jquery.transform2d.js
-//= require pc/js/jquery.jTinder.js
 //= require_tree ../pc

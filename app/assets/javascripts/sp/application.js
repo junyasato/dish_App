@@ -13,7 +13,4 @@
 //= require jquery
 //= require jquery_ujs
 //= require turbolinks
-//= require sp/js/jquery.min.js
-//= require sp/js/jquery.transform2d.js
-//= require sp/js/jquery.jTinder.js
 //= require_tree ../sp
