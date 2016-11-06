@@ -6,12 +6,14 @@
     <meta name="viewport" content="width=device-width,initial-scale=1.0,minimum-scale=1.0,maximum-scale=1.0,user-scalable=no">
 
     <%= stylesheet_link_tag    'sp/application', media: 'all', 'data-turbolinks-track': 'reload' %>
-    <%= stylesheet_link_tag    'sp/css/jTinder.css', 'data-turbolinks-track': 'reload' %>
+    <link rel="stylesheet" type="text/css" href="<%= asset_path 'sp/css/jTinder.css' %>">
 
     <%= javascript_include_tag 'sp/application', 'data-turbolinks-track': 'reload' %>
-    <%= javascript_include_tag 'sp/js/jquery.min.js', 'data-turbolinks-track' => true %>
-    <%= javascript_include_tag 'sp/js/jquery.transform2d.js', 'data-turbolinks-track' => true %>
-    <%= javascript_include_tag 'sp/js/jquery.jTinder.js', 'data-turbolinks-track' => true %>
+
+    <script type="text/javascript" src="<%= asset_path 'sp/js/jquery.min.js' %>"></script>
+    <script type="text/javascript" src="<%= asset_path 'sp/js/jquery.transform2d.js' %>"></script>
+    <script type="text/javascript" src="<%= asset_path 'sp/js/jquery.jTinder.js' %>"></script>
+
   </head>
   <script>$("#tinderslide").jTinder();</script>
 
