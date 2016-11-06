@@ -1,0 +1,71 @@
+<div class="image-field">
+  <div id="tinderslide">
+    <ul>
+      <li class="pane1">
+        <div class="img">
+          <img src="http://www.iitakaeki.com/contents/upload_images/1601%E9%A3%9F%E4%BA%8B-%E3%81%8D%E3%81%AE%E3%81%93%E9%9B%91%E7%82%8A.JPG">
+        </div>
+        <div>鍋定食</div>
+        <div class="like"></div>
+        <div class="dislike"></div>
+      </li>
+      <li class="pane2">
+        <div class="img">
+          <img src="http://tsukai-shizuoka.jp/userfiles/images/suports/011/01_food-005.jpg">
+        </div>
+        <div>定食</div>
+        <div class="like"></div>
+        <div class="dislike"></div>
+      </li>
+      <li class="pane3">
+        <div class="img">
+          <img src="https://d3ftecjsng6jy5.cloudfront.net/images/topic/151/b87d689bd2cb9528877ce283b23a5e28ca1fba6e_5704a748ba80d_p.jpeg">
+        </div>
+        <div>クッパ</div>
+        <div class="like"></div>
+        <div class="dislike"></div>
+      </li>
+      <li class="pane4">
+        <div class="img">
+          <img src="https://tabelog.ssl.k-img.com/resize/660x370c/restaurant/images/Rvw/26805/26805794.jpg?token=1094d12&api=v2"></div>
+        <div>オムライス</div>
+        <div class="like"></div>
+        <div class="dislike"></div>
+      </li>
+      <li class="pane5">
+        <div class="img">
+          <img src="http://cookbiz.jp/soken/core/wp-content/uploads/2015/07/udon_image.jpg"></div>
+        <div>うどん</div>
+        <div class="like"></div>
+        <div class="dislike"></div>
+      </li>
+      <li class="pane6">
+        <div class="img">
+          <img src="http://cookbiz.jp/soken/core/wp-content/uploads/2015/07/udon_image.jpg"></div>
+        <div>Beach</div>
+        <div class="like"></div>
+        <div class="dislike"></div>
+      </li>
+    </ul>
+  </div>
+</div>
+
+<script>
+$("#tinderslide").jTinder('like');
+
+$("#tinderslide").jTinder('dislike');
+
+$("#tinderslide").jTinder({
+    onDislike: function (item) {
+        alert('Dislike image ' + (item.index()+1));
+    },
+    onLike: function (item) {
+        alert('Like image ' + (item.index()+1));
+    },
+    animationRevertSpeed: 200,
+    animationSpeed: 400,
+    threshold: 1,
+    likeSelector: '.like',
+    dislikeSelector: '.dislike'
+});
+</script>

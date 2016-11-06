@@ -1,0 +1,80 @@
+<div class="top">
+  <div class="image-field">
+    <div id="tinderslide">
+      <ul>
+        <li class="pane0">
+          <div class="img">
+            <img src="http://robmientjes.nl/static/play/the-end.png">
+          </div>
+          <div></div>
+          <div class="like"></div>
+          <div class="dislike"></div>
+        </li>
+        <li class="pane1">
+          <div class="img">
+            <img src="http://lh6.ggpht.com/yossysan/SEKkcchqhSI/AAAAAAAAASk/5d7GMZiYhKo/s800/DSC04612.JPG">
+          </div>
+          <div>パスタ</div>
+          <div class="like"></div>
+          <div class="dislike"></div>
+        </li>
+        <li class="pane2">
+          <div class="img">
+            <img src="http://static.salonlist.jp/static/img/macaron/assets/10bec5329dd744d5a5c8fa52dadab088.jpg">
+          </div>
+          <div>オムライス</div>
+          <div class="like"></div>
+          <div class="dislike"></div>
+        </li>
+        <li class="pane3">
+          <div class="img">
+            <img src="http://img-cdn.jg.jugem.jp/b2f/13847/20101112_1727321.jpg">
+          </div>
+          <div>海鮮丼</div>
+          <div class="like"></div>
+          <div class="dislike"></div>
+        </li>
+        <li class="pane4">
+          <div class="img">
+            <img src="http://find-travel.cdn-dena.com/picture/articlebody/98477"></div>
+          <div>つけ麺</div>
+          <div class="like"></div>
+          <div class="dislike"></div>
+        </li>
+        <li class="pane5">
+          <div class="img">
+            <img src="http://cdn.macaro-ni.jp/image/summary_body/18/18483/42ce8dd6fd4ecc1de3b5594a79859cb7.jpg"></div>
+          <div>パンケーキ</div>
+          <div class="like"></div>
+          <div class="dislike"></div>
+        </li>
+        <li class="pane6">
+          <div class="img">
+            <img src="http://find-travel.cdn-dena.com/picture/articlebody/80476"></div>
+          <div>京都ラーメン</div>
+          <div class="like"></div>
+          <div class="dislike"></div>
+        </li>
+      </ul>
+    </div>
+  </div>
+</div>
+
+<script>
+// $("#tinderslide").jTinder('like');
+// $("#tinderslide").jTinder('dislike');
+
+$("#tinderslide").jTinder({
+    onDislike: function (item) {
+        console.log("dislike");
+    },
+    onLike: function (item) {
+        console.log("like");
+    },
+    animationRevertSpeed: 200,
+    animationSpeed: 400,
+    threshold: 1,
+    likeSelector: '.like',
+    dislikeSelector: '.dislike'
+});
+</script>
