@@ -12,6 +12,16 @@
 /tmp/*
 !/log/.keep
 !/tmp/.keep
+!log/
+log/*
+!tmp/cache/
+tmp/cache/*
+!tmp/pids/
+tmp/pids/*
+
+Gemfile.lock
+
+/config/unicorn.rb
 
 # Ignore Byebug command history file.
 .byebug_history
